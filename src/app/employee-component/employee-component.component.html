@@ -1,0 +1,7 @@
+<div *ngFor="let employee of employees">
+  {{employee.id}} <br />
+  {{employee.code | lowercase | convertToSpaces:'-'}} <br />
+  {{employee.name | uppercase}} <br />
+  {{employee.salary | currency:'USD':'symbol':'1.2-2' }}
+  <hr />
+</div>
